@@ -19,8 +19,8 @@ export class AccountManager {
         return this.listAccount.filter(obj => obj.userName.includes(accountName))
     }
 
-    checkAccount(accountName: string){
-        return this.listAccount.filter(obj => obj.statusAccount)
+    removeAccount(accountName: string) {
+        this.listAccount = this.listAccount.filter(obj => obj.userName !== accountName)
     }
 
 }

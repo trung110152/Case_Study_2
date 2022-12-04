@@ -22,4 +22,5 @@ export class EmployeeManager {
         return this.listEmployee.filter(obj => obj.name.includes(name))
     }
 
+
 }
